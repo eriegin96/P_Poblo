@@ -1,13 +1,22 @@
 import React from 'react';
-import { Layout } from '../components';
+import Head from 'next/head';
 
+import { Layout } from '../components';
 import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<Layout>
-			<Component {...pageProps} />
-		</Layout>
+		<>
+			<Head>
+				<title>PoBlo</title>
+				<meta name='description' content='Poblo' />
+				<link rel='icon' href='/images/favicon.ico' />
+			</Head>
+
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</>
 	);
 }
 

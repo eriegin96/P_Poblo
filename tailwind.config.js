@@ -11,8 +11,8 @@ module.exports = {
 			},
 		},
 		fontFamily: {
-			title: 'Space Grotesk, sans-serif',
-			main: 'Space Grotesk, sans-serif',
+			title: 'Space Grotesk, Inter var, sans-serif',
+			main: 'Space Grotesk, Inter var, sans-serif',
 		},
 	},
 	plugins: [],

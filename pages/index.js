@@ -1,13 +1,21 @@
-import Head from 'next/head';
+import {
+	Accomplishments,
+	BgAnimation,
+	Hero,
+	Projects,
+	Technologies,
+	Timeline,
+} from '../components';
 
 export default function Home() {
 	return (
-		<div className='container mx-auto'>
-			<Head>
-				<title>PoBlo</title>
-				<meta name='description' content='PoBlo' />
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
-		</div>
+		<section className='Section grid'>
+			<Hero />
+			<BgAnimation />
+			<Projects />
+			<Technologies />
+			<Timeline />
+			<Accomplishments />
+		</section>
 	);
 }
