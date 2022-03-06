@@ -1,11 +1,4 @@
-import {
-	Accomplishments,
-	BgAnimation,
-	Hero,
-	Projects,
-	Technologies,
-	Timeline,
-} from '../components';
+import { BgAnimation, Hero, Projects, Technologies } from '../components';
 
 export default function Home() {
 	return (
@@ -16,8 +9,6 @@ export default function Home() {
 			</section>
 			<Projects />
 			<Technologies />
-			<Timeline />
-			<Accomplishments />
 		</>
 	);
 }

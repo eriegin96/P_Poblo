@@ -3,7 +3,7 @@
 }
 
 .LinkItem {
-	@apply text-[8px] leading-[14px] mb-2 flex items-center sm:text-base md:text-lg text-transparent-b-75 md:mb-4 duration-300 ease-out relative left-0 hover:text-primary hover:left-1.5;
+	@apply text-[8px] leading-[14px] mb-2 flex items-center sm:text-base md:text-lg text-transparent-w-75 md:mb-4 duration-300 ease-out relative left-0 hover:text-primary hover:left-1.5;
 }
 
 .SocialIconsContainer {
@@ -11,11 +11,11 @@
 }
 
 .CompanyContainer {
-	@apply flex flex-col mb-8 items-center sm:items-baseline flex-wrap md:mr-auto;
+	@apply flex flex-col mb-8 items-center justify-center sm:mb-0 sm:items-baseline flex-wrap md:mr-auto;
 }
 
 .Slogan {
-	@apply text-sm min-w-[100px] sm:text-base text-transparent-b-50 md:min-w-[280px] md:text-lg md:py-4;
+	@apply text-sm min-w-[100px] sm:text-base text-transparent-w-50 md:min-w-[280px] md:text-lg md:py-4;
 }
 
 .SocialContainer {
@@ -23,7 +23,7 @@
 }
 
 .LinkList {
-	@apply w-full pt-8 px-1 py-4 gap-1 sm:px-0 sm:gap-4 lg:pt-10 lg:pb-7 md:gap-10 grid grid-cols-3 border-t border-transparent-b-10;
+	@apply w-full pt-8 px-1 py-4 gap-1 sm:px-0 sm:gap-4 lg:pt-10 lg:pb-7 md:gap-10 grid grid-cols-3 border-t border-transparent-w-10;
 }
 
 .LinkColumn {
@@ -31,5 +31,5 @@
 }
 
 .LinkTitle {
-	@apply text-[10px] leading-3 mb-2 sm:text-[12px] sm:leading-6 sm:mb-4 font-semibold uppercase text-transparent-b-40;
+	@apply text-[10px] leading-3 mb-2 sm:text-[12px] sm:leading-6 sm:mb-4 font-semibold uppercase text-transparent-w-40;
 }

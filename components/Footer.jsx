@@ -20,7 +20,7 @@ export default function Footer() {
 			</ul>
 			<div className='SocialIconsContainer'>
 				<div className='CompanyContainer'>
-					<p className='Slogan'>Innovating one project at a time</p>
+					<p className='Slogan'>You only live once</p>
 				</div>
 				<div className='SocialContainer'>
 					<a href='https://github.com/eriegin96' className='SocialIcons'>

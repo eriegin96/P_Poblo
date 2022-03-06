@@ -60,7 +60,7 @@ li {
 }
 
 .SectionText {
-	@apply text-base pb-4 sm:max-w-[670px] sm:text-xl sm:leading-8 sm:pb-6 md:max-w-[800px] md:text-2xl md:leading-10 md:pb-14 text-transparent-b-50 font-light;
+	@apply text-base pb-4 sm:max-w-[670px] sm:text-xl sm:leading-8 sm:pb-6 md:max-w-[800px] md:text-2xl md:leading-10 md:pb-14 text-transparent-w-50 font-light;
 }
 
 .SectionDivider {
@@ -68,11 +68,11 @@ li {
 }
 
 .SectionSubText {
-	@apply text-sm leading-[22px] sm:max-w-[672px] sm:text-base md:max-w-[800px] font-light md:text-lg md:leading-8 text-transparent-b-75;
+	@apply text-sm leading-[22px] sm:max-w-[672px] sm:text-base md:max-w-[800px] font-light md:text-lg md:leading-8 text-transparent-w-75;
 }
 
 .SecondaryBtn {
-	@apply mt-4 mb-10 py-2 px-4 w-full text-sm leading-4 sm:mt-6 sm:mb-16 sm:py-4 sm:px-6 sm:w-fit sm:text-xl sm:leading-none text-primary bg-none border border-transparent-b-30 rounded-full font-semibold md:text-lg md:mt-8 md:mb-20 cursor-pointer duration-400 ease-out focus:outline-none hover:text-bg1 hover:bg-primary hover:border-primary active:bg-[#e0e4eb] active:border-[#304169] active:shadow-secondaryBtn;
+	@apply mt-4 mb-10 py-2 px-4 w-full text-sm leading-4 sm:mt-6 sm:mb-16 sm:py-4 sm:px-6 sm:w-fit sm:text-xl sm:leading-none text-primary bg-none border border-transparent-w-30 rounded-full font-semibold md:text-lg md:mt-8 md:mb-20 cursor-pointer duration-400 ease-out focus:outline-none hover:text-bg1 hover:bg-primary hover:border-primary active:bg-[#e0e4eb] active:border-[#304169] active:shadow-secondaryBtn;
 }
 
 .ButtonBack {
@@ -81,4 +81,9 @@ li {
 
 .ButtonFront {
 	@apply text-sm sm:text-base border-none rounded-50 flex justify-center items-center absolute top-0 left-0 w-full h-full bg-buttonFront duration-400 ease-out md:text-2xl font-semibold cursor-pointer hover:opacity-0 focus:outline-none active:opacity-100 active:shadow-buttonFront disabled:opacity-50 disabled:shadow-buttonFront disabled:bg-buttonBack;
+}
+
+.Title {
+	@apply text-3xl max-w-full md:text-5xl bg-buttonFront hover:bg-buttonBack hover:drop-shadow-titleBtn duration-300 ease-linear bg-clip-text font-semibold;
+	-webkit-text-fill-color: transparent;
 }

@@ -1,47 +1,74 @@
 export const PROJECTS = [
 	{
-		title: 'MERN Memories',
-		description:
-			"Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-		image: '/images/1.png',
-		tags: ['Mongo', 'Express', 'React', 'Node'],
-		source: 'https://google.com',
-		visit: 'https://google.com',
-		id: 0,
+		id: '1',
+		name: 'Cora',
+		title: 'A simple Tic-Tac-Toe game in Vietnamese version',
+		description: 'In this app, I...',
+		image: '/images/cora.png',
+		tags: ['React'],
+		source: 'https://github.com/eriegin96/P_Cora',
+		visit: 'https://cora-eriegin96.netlify.app/',
 	},
 	{
-		title: 'E-Commerce',
-		description:
-			"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-		image: '/images/2.png',
-		tags: ['React', 'JavaScript'],
-		source: 'https://google.com',
-		visit: 'https://google.com',
-		id: 1,
+		id: '2',
+		name: 'Love Travel',
+		title: 'A static page with responsive view for different equipments',
+		description: 'Bla bla',
+		image: '/images/love-travel.png',
+		tags: ['HTML', 'CSS', 'Javascript'],
+		source: 'https://github.com/eriegin96/P_Love-Travel',
+		visit: 'https://eriegin96.github.io/P_Love-Travel/',
 	},
+	// {
+	// 	id: '3',
+	// 	name: 'Evawo',
+	// 	title: 'New words everyday',
+	// 	description: 'Bla bla',
+	// 	image: '/images/love-travel.png',
+	// 	tags: ['React', 'Firebase', 'MUI'],
+	// 	source: 'https://github.com/eriegin96/P_Evawo',
+	// 	visit: 'https://evawo-843ba.web.app/',
+	// },
 	{
-		title: 'WebRTC App',
-		description:
-			"This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-		image: '/images/3.jpg',
-		tags: ['React', 'WebRTC'],
-		source: 'https://google.com',
-		visit: 'https://google.com',
+		id: '4',
+		name: 'Zola',
+		title: 'Clone of Zalo',
+		description: `Login with Google, Facebook and email using Firebase Authentication
+Create fake users to add friends
+Edit personal information
+Realtime chat using Firestore Database`,
+		image: '/images/zola.png',
+		tags: ['React', 'Firebase', 'MUI', 'Antd'],
+		source: 'https://github.com/eriegin96/P_Zola',
+		visit: 'https://zola-6588d.web.app/',
 		id: 2,
 	},
 	{
-		title: 'Unichat',
-		description:
-			'This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application',
-		image: '/images/4.jpg',
-		tags: ['React', 'ChatEngine', 'Firebase'],
-		source: 'https://google.com',
-		visit: 'https://google.com',
-		id: 3,
+		id: '5',
+		name: 'Terdin',
+		title: 'Clone of Tinder',
+		description: `Login with Google using Firebase Authentication
+Create fake users to match
+Edit personal information
+Realtime chat using Firestore Database`,
+		image: '/images/terdin.png',
+		tags: ['React', 'TailwindCSS', 'Firebase'],
+		source: 'https://github.com/eriegin96/P_Terdin',
+		visit: 'https://terdin-af5fb.web.app/',
+	},
+	{
+		id: '6',
+		name: 'Lifo',
+		title: 'Clone of Lofi',
+		description: 'Bla bla',
+		image: '/images/lifo.png',
+		tags: ['React', 'TailwindCSS', 'Firebase'],
+		source: 'https://github.com/eriegin96/P_Lifo',
+		visit: 'https://lifo-95316.web.app/',
 	},
 ];
 
-export const TimelineData = [
+export const TIMELINE = [
 	{ year: 2017, text: 'Started my journey' },
 	{ year: 2018, text: 'Worked as a freelance developer' },
 	{ year: 2019, text: 'Founded JavaScript Mastery' },

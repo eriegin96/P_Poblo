@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { TimelineData } from '../../constants/portfolio';
+import { TIMELINE } from '../../constants/portfolio';
 
-const TOTAL_CAROUSEL_COUNT = TimelineData.length;
+const TOTAL_CAROUSEL_COUNT = TIMELINE.length;
 
 export default function TimeLine() {
 	const [activeItem, setActiveItem] = useState(0);
@@ -25,9 +25,7 @@ export default function TimeLine() {
 		e.preventDefault();
 
 		if (carouselRef.current) {
-			const scrollLeft = Math.floor(
-				carouselRef.current.scrollWidth * 0.7 * (i / TimelineData.length)
-			);
+			const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TIMELINE.length));
 
 			scroll(carouselRef.current, scrollLeft);
 		}
@@ -36,8 +34,7 @@ export default function TimeLine() {
 	const handleScroll = () => {
 		if (carouselRef.current) {
 			const index = Math.round(
-				(carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) *
-					TimelineData.length
+				(carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TIMELINE.length
 			);
 
 			setActiveItem(index);
@@ -55,7 +52,7 @@ export default function TimeLine() {
 			</p>
 			<ul className='CarouselContainer' ref={carouselRef} onScroll={handleScroll}>
 				<>
-					{TimelineData.map((item, index) => (
+					{TIMELINE.map((item, index) => (
 						<div
 							className={`flex sm:block sm:min-w-0 ${
 								index === TOTAL_CAROUSEL_COUNT - 1 ? 'min-w-[120%]' : 'min-w-min'
@@ -106,7 +103,7 @@ export default function TimeLine() {
 				</>
 			</ul>
 			<div className='flex visible mb-8 sm:hidden sm:invisible w-[288px]'>
-				{TimelineData.map((item, index) => (
+				{TIMELINE.map((item, index) => (
 					<button
 						className={`bg-none p-1 cursor-pointer mr-1 outline-none ${
 							activeItem === index

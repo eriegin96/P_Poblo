@@ -11,7 +11,7 @@
 }
 
 .NavLink {
-	@apply p-2 text-xl sm:p-0 sm:text-3xl leading-8 text-transparent-b-75 duration-400 ease-out mx-1 cursor-pointer hover:text-primary;
+	@apply p-2 text-xl sm:p-0 sm:text-2xl leading-8 text-transparent-w-75 duration-400 ease-out mx-1 sm:mx-2 cursor-pointer hover:text-primary;
 }
 
 .SocialIcons {
