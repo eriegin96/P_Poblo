@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<title>PoBlo</title>
+				<title>Poblo</title>
 				<meta name='description' content='Poblo' />
 				<link rel='icon' href='/images/favicon.ico' />
 			</Head>

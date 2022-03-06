@@ -1,0 +1,35 @@
+.FooterWrapper {
+	@apply w-[calc(100vw-32px)] px-4 pb-12 sm:w-full sm:max-w-[1040px] sm:pt-8 sm:px-12 sm:pb-10 my-4 mx-auto;
+}
+
+.LinkItem {
+	@apply text-[8px] leading-[14px] mb-2 flex items-center sm:text-base md:text-lg text-transparent-b-75 md:mb-4 duration-300 ease-out relative left-0 hover:text-primary hover:left-1.5;
+}
+
+.SocialIconsContainer {
+	@apply flex w-full flex-col sm:justify-between sm:flex-row max-w-[1040px];
+}
+
+.CompanyContainer {
+	@apply flex flex-col mb-8 items-center sm:items-baseline flex-wrap md:mr-auto;
+}
+
+.Slogan {
+	@apply text-sm min-w-[100px] sm:text-base text-transparent-b-50 md:min-w-[280px] md:text-lg md:py-4;
+}
+
+.SocialContainer {
+	@apply flex items-center flex-wrap pr-4 sm:pr-0 justify-center;
+}
+
+.LinkList {
+	@apply w-full pt-8 px-1 py-4 gap-1 sm:px-0 sm:gap-4 lg:pt-10 lg:pb-7 md:gap-10 grid grid-cols-3 border-t border-transparent-b-10;
+}
+
+.LinkColumn {
+	@apply flex flex-col max-w-[220px] w-full;
+}
+
+.LinkTitle {
+	@apply text-[10px] leading-3 mb-2 sm:text-[12px] sm:leading-6 sm:mb-4 font-semibold uppercase text-transparent-b-40;
+}

@@ -1,0 +1,19 @@
+.Container {
+	@apply flex justify-between items-center flex-wrap sm:p-4 sm:pt-8;
+}
+
+.Div1 {
+	@apply flex items-center;
+}
+
+.Div2 {
+	@apply flex items-center justify-around;
+}
+
+.NavLink {
+	@apply p-2 text-xl sm:p-0 sm:text-3xl leading-8 text-transparent-b-75 duration-400 ease-out mx-1 cursor-pointer hover:text-primary;
+}
+
+.SocialIcons {
+	@apply duration-300 ease-out rounded-50 p-2 hover:bg-[#212d45] hover:scale-120 cursor-pointer;
+}

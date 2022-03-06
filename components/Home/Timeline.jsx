@@ -57,15 +57,14 @@ export default function TimeLine() {
 				<>
 					{TimelineData.map((item, index) => (
 						<div
-							className='CarouselMobileScrollNode'
+							className={`flex sm:block sm:min-w-0 ${
+								index === TOTAL_CAROUSEL_COUNT - 1 ? 'min-w-[120%]' : 'min-w-min'
+							}`}
 							key={index}
-							final={index === TOTAL_CAROUSEL_COUNT - 1}
 						>
 							<div
-								className='CarouselItem'
-								index={index}
+								className={`CarouselItem ${activeItem === index ? 'opacity-100' : 'opacity-50'}`}
 								id={`carousel__item-${index}`}
-								active={activeItem}
 								onClick={(e) => handleClick(e, index)}
 							>
 								<h4 className='CarouselItemTitle'>
@@ -106,17 +105,17 @@ export default function TimeLine() {
 					))}
 				</>
 			</ul>
-			<div className='CarouselButtons'>
+			<div className='flex visible mb-8 sm:hidden sm:invisible w-[288px]'>
 				{TimelineData.map((item, index) => (
 					<button
-						className='CarouselButton'
+						className={`bg-none p-1 cursor-pointer mr-1 outline-none ${
+							activeItem === index
+						} ? 'opacity-100 scale-160' : 'opacity-30 scale-100'`}
 						key={index}
-						index={index}
-						active={activeItem}
 						onClick={(e) => handleClick(e, index)}
 						type='button'
 					>
-						<div className='CarouselButtonDot' active={activeItem} />
+						<div className='bg-white rounded-xl m-auto w-[3px] h-[3px]' active={activeItem} />
 					</button>
 				))}
 			</div>

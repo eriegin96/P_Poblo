@@ -9,13 +9,15 @@ import {
 
 export default function Home() {
 	return (
-		<section className='Section grid'>
-			<Hero />
-			<BgAnimation />
+		<>
+			<section className='Section Section-grid'>
+				<Hero />
+				<BgAnimation />
+			</section>
 			<Projects />
 			<Technologies />
 			<Timeline />
 			<Accomplishments />
-		</section>
+		</>
 	);
 }

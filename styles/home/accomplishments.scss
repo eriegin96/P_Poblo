@@ -1,133 +1,15 @@
-div.Boxes {
-	@apply w-full grid grid-cols-4 gap-6 mt-6 mx-0 mb-10;
-
-	// width: 100%;
-	// display: grid;
-	// grid-template-columns: repeat(4, 1fr);
-	// gap: 24px;
-	// margin: 24px 0 40px;
-
-	// @media ${props => props.theme.breakpoints.md}{
-	//   gap: 16px;
-	//   margin: 20px 0 32px;
-	//   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-	// }
-
-	// @media ${props => props.theme.breakpoints.sm}{
-	//   display: grid;
-	//   grid-template-columns: repeat(2, 1fr);
-	//   gap: 10px;
-	//   max-width: 500px;
-	//   margin: 24px auto;
+.Boxes {
+	@apply grid grid-cols-2 gap-2.5 my-6 mx-auto sm:gap-4 sm:mt-5 sm:mx-0 sm:mb-8 w-full md:grid-cols-4 md:gap-6 md:mt-6 md:mb-10;
 }
 
-div.Box {
-	// background: #212D45;
-	// border-radius: 12px;
-	// height: 144px;
-	// padding: 24px;
-	// @media ${props => props.theme.breakpoints.lg} {
-	//   height: 210px;
-
-	// }
-
-	// @media ${props => props.theme.breakpoints.md} {
-	//   height: 135px;
-	//   padding: 16px;
-	// }
-
-	// @media ${props => props.theme.breakpoints.sm} {
-	//   height: 110px;
-	//   padding: 12px;
-
-	//   &:nth-child(2n){
-	//     grid-row:2;
-	//   }
-	// }
+.Box {
+	@apply h-[110px] p-3 even:row-span-2 sm:h-[135px] sm:p-4 lg:h-36 md:p-6 bg-[#212d45] rounded-xl md:h-[210px];
 }
 
-h5.BoxNum {
-	// font-style: normal;
-	// font-weight: 600;
-	// font-size: 36px;
-	// line-height: 40px;
-	// letter-spacing: 0.01em;
-	// color: #FFFFFF;
-	// margin-bottom: 8px;
-
-	// @media ${props => props.theme.breakpoints.md} {
-	//   font-size: 28px;
-	//   line-height: 32px;
-	// }
-	// @media ${props => props.theme.breakpoints.sm} {
-	//   font-size: 24px;
-	//   line-height: 26px;
+.BoxNum {
+	@apply text-2xl leading-[26px] sm:text-[28px] sm:leading-8 md:text-4xl font-semibold tracking-[0.01em] mb-2;
 }
 
-p.BoxText {
-	// font-style: normal;
-	// font-weight: normal;
-	// font-size: 18px;
-	// line-height: 24px;
-	// letter-spacing: 0.02em;
-	// color: rgba(255, 255, 255, 0.75);
-
-	// @media ${props => props.theme.breakpoints.md}{
-	//   font-size: 16px;
-	//   line-height: 20px;
-	// };
-
-	// @media ${props => props.theme.breakpoints.sm} {
-	//   font-size: 10px;
-	//   line-height: 14px;
-	// }
-}
-
-div.Join {
-	// display: flex;
-	// max-width: 1040px;
-	// justify-content: center;
-	// align-items: center;
-	// padding-bottom: 80px;
-
-	// @media ${props => props.theme.breakpoints.md}{
-	//   display: flex;
-	//   justify-content: center;
-	//   padding-bottom: 64px;
-	// }
-
-	// @media ${props => props.theme.breakpoints.sm}{
-	//   display: flex;
-	//   flex-direction: column;
-	//   align-items: center;
-	//   padding-bottom: 32px;
-	// }
-}
-
-h5.JoinText {
-	//   display: flex;
-	//   font-size: 24px;
-	//   line-height: 40px;
-	//   letter-spacing: 0.02em;
-	//   color: rgba(255, 255, 255, 0.5);
-
-	// @media ${props => props.theme.breakpoints.md}{
-	//   line-height: 32px;
-	//   font-size: 20px;
-	// };
-
-	// @media ${props => props.theme.breakpoints.sm}{
-	//   font-size: 16px;
-	//   line-height: 24px;
-	//   margin: 0 0 16px;
-	// }
-}
-
-div.IconContainer {
-	// display: flex;
-
-	// @media ${props => props.theme.breakpoints.sm}{
-	//   width: 160px;
-	//   justify-content: space-between;
-	// }
+.BoxText {
+	@apply text-xs sm:text-base sm:leading-10 md:text-lg md:leading-6 text-transparent-b-75 tracking-wide;
 }

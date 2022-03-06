@@ -39,9 +39,9 @@ const Header = () => {
 		<div className='Container'>
 			<div className='Div1'>
 				<Link href='/'>
-					<a className='Logo'>
+					<a className='flex items-center'>
 						<DiCssdeck size='3rem' />
-						<span className='text-xl'>Portfolio</span>
+						<span className='text-[2rem]'>Portfolio</span>
 					</a>
 				</Link>
 			</div>
@@ -61,17 +61,6 @@ const Header = () => {
 						<a className='NavLink'>About</a>
 					</Link>
 				</li>
-			</div>
-			<div className='Div3'>
-				<a href='https://github.com/eriegin96' className='SocialIcons'>
-					<AiFillGithub size='3rem' />
-				</a>
-				<a href='https://www.linkedin.com/in/tin-truong-tri-516702123/' className='SocialIcons'>
-					<AiFillLinkedin size='3rem' />
-				</a>
-				<a href='https://instagram.com/eriegin' className='SocialIcons'>
-					<AiFillInstagram size='3rem' />
-				</a>
 			</div>
 		</div>
 	);
